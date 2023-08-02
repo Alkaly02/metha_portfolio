@@ -17,12 +17,12 @@ const NavbarPane = styled.nav`
   background-color: ${rootstyles.color.primaryhsl};
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: ${rootstyles.radius.border};
-  padding: 5px 10px;
+  padding: 5px 20px;
   border: 1px solid #000;
 `;
 const NavLinkPane = styled(NavLink)`
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 70px;
   margin: auto;
   paddin: 5px;
   background-color: ${rootstyles.color.navLinkColor};
@@ -32,10 +32,14 @@ const NavLinkPane = styled(NavLink)`
   justify-content: center;
   border-radius: ${rootstyles.radius.border};
   text-decoration: none;
+  transition: all 200ms ease-in-out;
 
   &.active {
-    background: ${rootstyles.color.navLinkColor};
+    background: ${rootstyles.color.blackLinear};
     color: #fff;
+  }
+  &:hover {
+    background-color: rgba(50, 60, 255, 0.5);
   }
 `;
 
@@ -76,12 +80,12 @@ const Navbar = () => {
       direction="row"
       wrap="wrap"
     >
-      <NavbarPane style={{ flex: 0.5 }}>
+      <NavbarPane>
         <Grid justify="space-evenly">
           {links.map(({ to, svg, label }) => (
-            <Grid.Col span={2}>
+            <Grid.Col span={3}>
               <NavLinkPane to={to}>
-                <img src={svg} alt="me" />
+                <img src={svg} alt={label} />
                 <NavLinkSpanPane>{label}</NavLinkSpanPane>
               </NavLinkPane>
             </Grid.Col>

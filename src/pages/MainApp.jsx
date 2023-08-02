@@ -29,13 +29,13 @@ const LeftPane = styled.div`
 const RightPane = styled.div`
   background-color: #fff;
   flex: 2;
-  height: 100%;new-
+  height: 100%;
 `;
 
 const MainApp = () => {
   return (
     <AppContainerPane>
-      <Container px={0}>
+      <Container px={10}>
         <Header />
         <MainContentPane>
           <Navbar />
