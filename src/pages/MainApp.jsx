@@ -5,6 +5,7 @@ import { Container } from "@mantine/core";
 import Header from "../components/header/Header";
 import Navbar from "../components/navbar/Navbar";
 import { Outlet } from "react-router-dom";
+import Profil from "../components/profil/Profil";
 
 const AppContainerPane = styled.div`
   background-color: ${rootstyles.color.primary};
@@ -18,29 +19,34 @@ const MainContentChild = styled.div`
   display: flex;
   gap: 10px;
   margin-top: 10px;
-  height: 400px;
+  min-height: 400px;
 `;
 const LeftPane = styled.div`
   background-color: #fff;
   flex: 1;
   height: 100%;
-  padding: 20px;
+  padding: 10px ${rootstyles.padding.leftPane}px;
+  border-radius: ${rootstyles.radius.border};
 `;
 const RightPane = styled.div`
   background-color: #fff;
   flex: 2;
-  height: 100%;
+  height: inherit;
+  padding: 10px ${rootstyles.padding.rightPane}px;
+  border-radius: ${rootstyles.radius.border};
 `;
 
 const MainApp = () => {
   return (
     <AppContainerPane>
-      <Container px={10}>
+      <Container size="xl" p={10}>
         <Header />
         <MainContentPane>
           <Navbar />
           <MainContentChild>
-            <LeftPane>left</LeftPane>
+            <LeftPane>
+              <Profil />
+            </LeftPane>
             <RightPane>
               <Outlet />
             </RightPane>

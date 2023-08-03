@@ -10,12 +10,13 @@ import {
   TRAVAIL_PATH,
 } from "../../routes/navigation/navigationPaths";
 import accueilSvg from "../../assets/svgs/accueil.svg";
+import cvSvg from "../../assets/svgs/cvSvg.svg";
 import travailSvg from "../../assets/svgs/travail.svg";
 import contactSvg from "../../assets/svgs/contact.svg";
 
 const NavbarPane = styled.nav`
   background-color: ${rootstyles.color.primaryhsl};
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: ${rootstyles.radius.border};
   padding: 5px 20px;
   border: 1px solid #000;
@@ -25,6 +26,7 @@ const NavLinkPane = styled(NavLink)`
   height: 70px;
   margin: auto;
   paddin: 5px;
+  color: #000;
   background-color: ${rootstyles.color.navLinkColor};
   display: flex;
   flex-direction: column;
@@ -33,13 +35,14 @@ const NavLinkPane = styled(NavLink)`
   border-radius: ${rootstyles.radius.border};
   text-decoration: none;
   transition: all 200ms ease-in-out;
+  font-weight: ${rootstyles.fontWeight.md};
 
   &.active {
-    background: ${rootstyles.color.blackLinear};
+    background: ${rootstyles.color.navbarActive};
     color: #fff;
   }
   &:hover {
-    background-color: rgba(50, 60, 255, 0.5);
+    background-color: ${rootstyles.color.tercary};
   }
 `;
 
@@ -51,7 +54,7 @@ const links = [
   },
   {
     to: CV_PATH,
-    svg: accueilSvg,
+    svg: cvSvg,
     label: "Cv",
   },
   {
