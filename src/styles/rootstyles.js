@@ -7,6 +7,7 @@ export const rootstyles = {
         navLinkColor: '#E1E8EF',
         blackLinear: 'linear-gradient(127deg, #062B35 0%, #05161F 100%)',
         navbarActive: "linear-gradient(127deg, #FF9C1A 0%, #E80505 100%)",
+        cardBg: "#FFEBD1"
     },
     radius: {
         border: '20px'
@@ -18,12 +19,14 @@ export const rootstyles = {
         lg: 35,
         md: 28,
         sm: 16,
-        mx: 14
+        mx: 14,
+        mxx: 11
     },
     fontWeight: {
         lg: 700,
         md: 600,
-        sm: 500
+        sm: 500,
+        mx: 300
     },
     padding: {
         leftPane: 20,
