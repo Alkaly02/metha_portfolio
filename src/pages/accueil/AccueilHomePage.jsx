@@ -53,7 +53,7 @@ const AccueilHomePage = () => {
         {aproposDeMoi.apropos}
       </Text>
       <TitleDesciption>{Object.entries(aproposDeMoi)[1][0]}</TitleDesciption>
-      <Grid>
+      <Grid style={{ marginTop: 10 }}>
         {Object.entries(aproposDeMoi)[1][1].map(
           ({ title, description, bgColor, icon }) => {
             return (

@@ -1,13 +1,13 @@
 import { styled } from "styled-components";
+import { rootstyles } from "./rootstyles";
 
 export const TitleDesciption = styled.h4`
     margin:0;
-    margin-bottom: 10px;
     color: #000;
     font-family: Poppins;
-    font-size: 32px;
+    font-size: ${rootstyles.fontSize.md}px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: ${rootstyles.fontWeight.sm};
     line-height: 40px;
     letter-spacing: 0.8px;
 `
