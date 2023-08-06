@@ -1,41 +1,72 @@
 import React from "react";
 import Title from "../../components/shared/Title";
 import { rootstyles } from "../../styles/rootstyles";
-import { Flex, Grid } from "@mantine/core";
+import { Badge, Flex, Grid } from "@mantine/core";
 import { TitleDesciption } from "../../styles/sharedStyles";
 import CvCard from "../../components/cards/CvCard";
 import educationSvg from "../../assets/svgs/educationSvg.svg";
 import experienceSvg from "../../assets/svgs/experienceSvg.svg";
+import { styled } from "styled-components";
+
+const TitlePane = styled.h4`
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 46.229px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+`;
 
 const cv = {
-  Éducation: {
-    icon: educationSvg,
-    data: [
-      {
-        annee: "2020-2021",
-        title: "Développement de logiciels",
-        description: "École de Moringa",
-      },
-      {
-        annee: "2012-2016",
-        title: "La gestion des catastrophes",
-        description: "Université Masinde Muliro",
-      },
-    ],
+  cv: {
+    Éducation: {
+      icon: educationSvg,
+      data: [
+        {
+          annee: "2020-2021",
+          title: "Développement de logiciels",
+          description: "École de Moringa",
+        },
+        {
+          annee: "2012-2016",
+          title: "La gestion des catastrophes",
+          description: "Université Masinde Muliro",
+        },
+      ],
+    },
+    Expérience: {
+      icon: experienceSvg,
+      data: [
+        {
+          annee: "2022 - Présent",
+          title: "Mentor technique",
+          description: "École de Moringa",
+        },
+        {
+          annee: "2021-2022",
+          title: "Développement de site Web",
+          description: "Village 2 Nation",
+        },
+      ],
+    },
   },
-  Expérience: {
-    icon: experienceSvg,
-    data: [
-      {
-        annee: "2022 - Présent",
-        title: "Mentor technique",
-        description: "École de Moringa",
-      },
-      {
-        annee: "2021-2022",
-        title: "Développement de site Web",
-        description: "Village 2 Nation",
-      },
+  competances: {
+    "Compétences Professionnelles": [
+      "Angular",
+      "Android",
+      "SQL",
+      "JavaScript",
+      "CSS 3",
+    ],
+    "Compétences non techniques": [
+      "Time Management",
+      "Mentorship",
+      "Impeccable Communication",
+      "Flexibility",
+      "Research",
+      "Writing",
     ],
   },
 };
@@ -45,7 +76,7 @@ const CvHomePage = () => {
     <>
       <Title text="Cv" lineBg={rootstyles.color.navbarActive} />
       <Grid style={{ marginTop: 10 }} gutterXs={40}>
-        {Object.entries(cv).map((item) => {
+        {Object.entries(cv.cv).map((item) => {
           return (
             <Grid.Col span={6}>
               <Flex align="center" gap={10}>
@@ -61,6 +92,23 @@ const CvHomePage = () => {
                   />
                 );
               })}
+            </Grid.Col>
+          );
+        })}
+      </Grid>
+
+      <Grid>
+        {Object.entries(cv.competances).map((competance) => {
+          return (
+            <Grid.Col span={6}>
+              <TitlePane>{competance[0]}</TitlePane>
+              <Flex wrap="wrap" gap="sm">
+                {competance[1].map((tag) => (
+                  <Badge p="sm" color="dark" fw="normal" bg="#E1E8EF">
+                    {tag}
+                  </Badge>
+                ))}
+              </Flex>
             </Grid.Col>
           );
         })}
