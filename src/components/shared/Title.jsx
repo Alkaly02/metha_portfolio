@@ -16,7 +16,7 @@ const LinePane = styled.div`
 
 const Title = ({ text, lineBg }) => {
   return (
-    <Flex align="center" gap={20}>
+    <Flex align="center" gap={20} mb="lg">
       <TitlePane>{text}</TitlePane>
       <LinePane lineBg={lineBg}></LinePane>
     </Flex>

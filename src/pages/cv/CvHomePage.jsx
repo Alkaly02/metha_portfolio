@@ -75,7 +75,7 @@ const CvHomePage = () => {
   return (
     <>
       <Title text="Cv" lineBg={rootstyles.color.navbarActive} />
-      <Grid style={{ marginTop: 10 }} gutterXs={40}>
+      <Grid gutterXs={40}>
         {Object.entries(cv.cv).map((item) => {
           return (
             <Grid.Col span={6}>
