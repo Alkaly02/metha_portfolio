@@ -9,6 +9,7 @@ import graphicDesignSvg from "../../assets/svgs/graphicDesign.svg";
 import uxDesignSvg from "../../assets/svgs/uxDesign.svg";
 import montageSvg from "../../assets/svgs/montageVideo.svg";
 import coachingSvg from "../../assets/svgs/coaching.svg";
+import FadeTransition from "../../components/fadeTransition/FadeTransition";
 
 const aproposDeMoi = {
   apropos:
@@ -47,9 +48,15 @@ const aproposDeMoi = {
 
 const AccueilHomePage = () => {
   return (
-    <div>
-      <Title text="À propos de moi " lineBg={rootstyles.color.blackLinear} />
-      <Text fw={rootstyles.fontWeight.sm} lh={rootstyles.lineHeight.lg}>
+    <FadeTransition fadeTransition="animate__fadeIn">
+      <Title
+        text="À propos de moi "
+        lineBg={rootstyles.color.blackLinear}
+      />
+      <Text
+        fw={rootstyles.fontWeight.sm}
+        lh={rootstyles.lineHeight.lg}
+      >
         {aproposDeMoi.apropos}
       </Text>
       <TitleDesciption>{Object.entries(aproposDeMoi)[1][0]}</TitleDesciption>
@@ -58,18 +65,20 @@ const AccueilHomePage = () => {
           ({ title, description, bgColor, icon }) => {
             return (
               <Grid.Col span={6}>
-                <Card
-                  icon={icon}
-                  title={title}
-                  description={description}
-                  bgColor={bgColor}
-                />
+                <FadeTransition fadeTransition="animate__fadeInUp">
+                  <Card
+                    icon={icon}
+                    title={title}
+                    description={description}
+                    bgColor={bgColor}
+                  />
+                </FadeTransition>
               </Grid.Col>
             );
           }
         )}
       </Grid>
-    </div>
+    </FadeTransition>
   );
 };
 

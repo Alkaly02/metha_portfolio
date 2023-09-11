@@ -9,6 +9,7 @@ import ContactCard from "../../components/contact/ContactCard";
 
 import phoneSvg from "../../assets/svgs/phone.svg";
 import mailContact from "../../assets/svgs/mailContact.svg";
+import FadeTransition from "../../components/fadeTransition/FadeTransition";
 
 const contacts = {
   personal: [
@@ -29,23 +30,25 @@ const contacts = {
 
 const ContactHomePage = () => {
   return (
-    <div>
+    <FadeTransition fadeTransition="animate__fadeIn">
       <Title text="Contact " lineBg={rootstyles.color.navbarActive} />
       <Grid>
         {contacts.personal.map((contact) => {
           return (
             <Grid.Col span={6}>
+              <FadeTransition fadeTransition="animate__fadeInUp">
               <ContactCard
                 title={contact.title}
                 icon={contact.icon}
                 infos={contact.infos}
                 bgColor={contact.bgColor}
               />
+              </FadeTransition>
             </Grid.Col>
           );
         })}
       </Grid>
-    </div>
+    </FadeTransition>
   );
 };
 

@@ -7,6 +7,7 @@ import CvCard from "../../components/cards/CvCard";
 import educationSvg from "../../assets/svgs/educationSvg.svg";
 import experienceSvg from "../../assets/svgs/experienceSvg.svg";
 import { styled } from "styled-components";
+import FadeTransition from "../../components/fadeTransition/FadeTransition";
 
 const TitlePane = styled.h4`
   color: #000;
@@ -73,7 +74,7 @@ const cv = {
 
 const CvHomePage = () => {
   return (
-    <>
+    <FadeTransition fadeTransition="animate__fadeIn">
       <Title text="Cv" lineBg={rootstyles.color.navbarActive} />
       <Grid gutterXs={40}>
         {Object.entries(cv.cv).map((item) => {
@@ -85,11 +86,13 @@ const CvHomePage = () => {
               </Flex>
               {item[1].data.map(({ annee, title, description }) => {
                 return (
-                  <CvCard
-                    year={annee}
-                    title={title}
-                    description={description}
-                  />
+                  <FadeTransition fadeTransition="animate__fadeInUp">
+                    <CvCard
+                      year={annee}
+                      title={title}
+                      description={description}
+                    />
+                  </FadeTransition>
                 );
               })}
             </Grid.Col>
@@ -101,6 +104,7 @@ const CvHomePage = () => {
         {Object.entries(cv.competances).map((competance) => {
           return (
             <Grid.Col span={6}>
+              <FadeTransition fadeTransition="animate__fadeInUp">
               <TitlePane>{competance[0]}</TitlePane>
               <Flex wrap="wrap" gap="sm">
                 {competance[1].map((tag) => (
@@ -109,11 +113,12 @@ const CvHomePage = () => {
                   </Badge>
                 ))}
               </Flex>
+              </FadeTransition>
             </Grid.Col>
           );
         })}
       </Grid>
-    </>
+    </FadeTransition>
   );
 };
 
