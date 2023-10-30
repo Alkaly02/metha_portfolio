@@ -18,28 +18,28 @@ const aproposDeMoi = {
     {
       title: "Graphic Design",
       description:
-        "En tant que développeur, je me trouve le plus captivépar la puissance et la flexibilité de NEXT.js. Je suistoujours iconviviales.",
+        "En tant que designer graphique, je crée des visuels percutants, jonglant avec la couleur, la typographie, et la mise en page pour capturer l'essence des projets et communiquer leur message avec une esthétique visuelle soignée.",
       icon: graphicDesignSvg,
       bgColor: rootstyles.color.cardBg,
     },
     {
       title: "UX/UI DESIGN",
       description:
-        "En tant que développeur, je me trouve le plus captivépar la puissance et la flexibilité de NEXT.js. ",
+        "En tant que UX/UI Designer, je conçois des expériences utilisateur intuitives en optimisant les interfaces numériques pour une utilisation conviviale. Mon travail combine la conception visuelle avec une réflexion centrée sur l'utilisateur pour créer des interfaces esthétiques et fonctionnelles.",
       icon: uxDesignSvg,
       bgColor: rootstyles.color.primaryhsl,
     },
     {
       title: "Montage Vidéo ",
       description:
-        "Créer un utilisateur visuellement attrayant et intuitif des interfaces qui offrent un plaisir d'utilisation l'expérience est quelque chose dont je suis vraiment fanatique à propos de. ",
+        "En tant que vidéaste, je crée des vidéos captivantes, en utilisant mon expertise en tournage, montage, et post-production pour raconter des histoires visuelles de manière impactante.",
       icon: montageSvg,
       bgColor: rootstyles.color.primaryhsl,
     },
     {
       title: "Coaching",
       description:
-        "J'ai aussi trouvé une grande joie à partager mon connaissance avec les autres. Être un technicien mentor me permet de redonner à la communauté qui m'a soutenu tout au long de ma carrière.",
+        "En tant que coach assistant en design, j'accompagne les designers en herbe pour développer leurs compétences créatives et techniques. Mon rôle est de fournir des conseils et des ressources pour les aider à progresser dans leur parcours de conception.",
       icon: coachingSvg,
       bgColor: rootstyles.color.cardBg,
     },
