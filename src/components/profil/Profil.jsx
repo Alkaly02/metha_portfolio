@@ -12,6 +12,8 @@ import linkedInSvg from "../../assets/svgs/linkedin.svg";
 import twitterSvg from "../../assets/svgs/twitter.svg";
 import instaSvg from "../../assets/svgs/instagram.svg";
 
+import youtube from "../../assets/images/youtube.png"
+
 import phoneSvg from "../../assets/svgs/phone.svg";
 import emailSvg from "../../assets/svgs/mail.svg";
 import locationSvg from "../../assets/svgs/location.svg";
@@ -32,6 +34,29 @@ const ProfilDescPane = styled.span`
   font-size: ${rootstyles.fontSize.sm};
 `;
 
+const socialMedia = [
+  {
+    icon: facebookSvg,
+    alt: "Facebook",
+    href: "https://www.facebook.com/mouhamet.badiane",
+  },
+  {
+    icon: linkedInSvg,
+    alt: "LinkedIn",
+    href: "https://www.linkedin.com/in/mouhamet-badiane-38a445200/",
+  },
+  {
+    icon: youtube,
+    alt: "Youtube",
+    href: "https://www.youtube.com/@MethaDesign",
+  },
+  {
+    icon: instaSvg,
+    alt: "Instagram",
+    href: "https://www.instagram.com/badiane_mhd/",
+  }
+]
+
 const Profil = () => {
   return (
     <>
@@ -43,18 +68,13 @@ const Profil = () => {
         <ProfilDescPane>Graphic, UX/UI Designer, Video editer </ProfilDescPane>
 
         <Grid mt="sm">
-          <Grid.Col span={3}>
-            <SocialCard icon={facebookSvg} alt="Facebook" />
-          </Grid.Col>
-          <Grid.Col span={3}>
-            <SocialCard icon={linkedInSvg} alt="LinkedIn" />
-          </Grid.Col>
-          <Grid.Col span={3}>
-            <SocialCard icon={twitterSvg} alt="Twitter" />
-          </Grid.Col>
-          <Grid.Col span={3}>
-            <SocialCard icon={instaSvg} alt="Instagram" />
-          </Grid.Col>
+          {
+            socialMedia.map(({ icon, alt, href }) => {
+              return <Grid.Col span={3}>
+                <SocialCard icon={icon} alt={alt} href={href} />
+              </Grid.Col>
+            })
+          }
         </Grid>
       </Flex>
 
