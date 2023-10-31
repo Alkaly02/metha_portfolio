@@ -8,24 +8,24 @@ import FadeTransition from "../../components/fadeTransition/FadeTransition";
 const portfolio = {
   all: [
     {
-      title: "Développement d'applications",
-      description: "Smart Bank App",
+      title: "Affiche",
+      description: "NS Prestation",
     },
     {
-      title: "Blog",
-      description: "NEXT.js",
+      title: "Affiche",
+      description: "NS Prestation",
     },
     {
-      title: "UI/UX",
-      description: "Rental",
+      title: "Affiche",
+      description: "NS Prestation",
     },
     {
-      title: "Mentorat",
-      description: "Tech Mentor",
+      title: "Affiche",
+      description: "NS Prestation",
     },
     {
-      title: "Développement web",
-      description: "IdeaFlow",
+      title: "Affiche",
+      description: "NS Prestation",
     },
   ],
 };
