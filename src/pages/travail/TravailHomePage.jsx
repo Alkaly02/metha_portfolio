@@ -375,9 +375,9 @@ const TravailHomePage = () => {
     <FadeTransition fadeTransition="animate__fadeIn">
       <Title text="Portfolio" lineBg={rootstyles.color.navbarActive} />
 
-      {
-        `+ de ${portfolio.all.length} realisations`
-      }
+      <p style={{ margin: 0, fontWeight: 600 }}>{
+        `+ de ${portfolio.all.length} réalisations`
+      }</p>
       <ImageContainer>
       <Grid>
         {portfolio.all.map((work) => (
