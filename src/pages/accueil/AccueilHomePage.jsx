@@ -13,7 +13,7 @@ import FadeTransition from "../../components/fadeTransition/FadeTransition";
 
 const aproposDeMoi = {
   apropos:
-    "Bonjour! Je suis ravi de vous accueillir dans mon portfolio. Je suis un passionné et polyvalent Designer full-stack avec un vif intérêt pour l'exploration des dernières technologies e pointe. Mon parcours dans le monde du design a été tout simplement exaltant, et Je m'efforce constamment d'améliorer mes compétences et d'adopter les nouvelles tendance actuelle du marché",
+    "Bonjour! Je suis ravi de vous accueillir dans mon portfolio. Je suis un passionné et polyvalent Designer avec un vif intérêt pour l'exploration des dernières technologies de pointe. Mon parcours dans le monde du design a été tout simplement exaltant, et Je m'efforce constamment d'améliorer mes compétences et d'adopter les nouvelles tendances actuelles du marché.",
   "Ce que je fais": [
     {
       title: "Graphic Design",

@@ -31,8 +31,8 @@ const LeftPane = styled.div`
 const RightPane = styled.div`
   background-color: #fff;
   flex: 2;
-  height: inherit;
-  padding: 10px ${rootstyles.padding.rightPane}px;
+  height: 100%;
+  padding: 10px ${rootstyles.padding.rightPane - 10}px;
   border-radius: ${rootstyles.radius.border};
 `;
 
