@@ -1,4 +1,5 @@
 export const ACCUEIL_PATH = '/home'
 export const CV_PATH = '/cv'
 export const TRAVAIL_PATH = '/work'
+export const LIENS_UTILES_PATH = 'lien-utiles'
 export const CONTACT_PATH = '/contact'

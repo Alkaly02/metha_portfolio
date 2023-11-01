@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mantine/core";
+import { Flex, Grid } from "@mantine/core";
 import styled from "styled-components";
 
 import Title from "../../components/shared/Title";
@@ -63,6 +63,7 @@ import img50 from "../../assets/images/creas/komyu-affiche-4.png"
 import img51 from "../../assets/images/creas/khaire-travel-affiche-1.png"
 import img52 from "../../assets/images/creas/khaire-travel-logo.png"
 import img53 from "../../assets/images/creas/red-team-affichee-1.png"
+import { Link, Outlet } from "react-router-dom";
 
 const portfolio = {
   all: [
@@ -349,46 +350,20 @@ const portfolio = {
   ],
 };
 
-const ImageContainer = styled.div`
-  height: 93vh;
-  overflow: auto;
-  padding: 15px;
-
-  &::-webkit-scrollbar {
-  width: 5px;
-}
-
-&::-webkit-scrollbar-track {
-  background: #F6F9FB;
-  border-radius: 10px;
-}
-
-&::-webkit-scrollbar-thumb {
-  background: #FF9C1A;
-  border-radius: 10px;
-  border: 2px solid #FF9C1A;
-}
+const LinkPane = styled(Link)`
+  color: black;
 `
+
 
 const TravailHomePage = () => {
   return (
     <FadeTransition fadeTransition="animate__fadeIn">
       <Title text="Portfolio" lineBg={rootstyles.color.navbarActive} />
-
-      <p style={{ margin: 0, fontWeight: 600 }}>{
-        `+ de ${portfolio.all.length} réalisations`
-      }</p>
-      <ImageContainer>
-      <Grid>
-        {portfolio.all.map((work) => (
-          <Grid.Col span={6}>
-            <FadeTransition fadeTransition="animate__fadeInUp">
-              <PorfolioCard img={work.img} title={work.title} description={work.description} />
-            </FadeTransition>
-          </Grid.Col>
-        ))}
-      </Grid>
-      </ImageContainer>
+      <Flex justify={"flex-end"} gap={10}>
+        <LinkPane to={""}>Mes realisations</LinkPane>
+        <LinkPane to={"lien-utiles"}>Liens utiles</LinkPane>
+      </Flex>
+      <Outlet />
     </FadeTransition>
   );
 };
