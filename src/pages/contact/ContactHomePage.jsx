@@ -16,7 +16,7 @@ const contacts = {
     {
       title: "Téléphone ",
       icon: phoneSvg,
-      infos: ["+221 77 114 29 84", "+221 76 645 29 35"],
+      infos: ["+221 77 114 29 84", "+221  76 645 29 35"],
       bgColor: rootstyles.color.tercary,
     },
     {
