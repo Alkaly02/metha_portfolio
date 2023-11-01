@@ -363,7 +363,9 @@ const TravailHomePage = () => {
         <LinkPane to={""}>Mes realisations</LinkPane>
         <LinkPane to={"lien-utiles"}>Liens utiles</LinkPane>
       </Flex>
-      <Outlet />
+      <div style={{ marginTop: "30px" }}>
+        <Outlet />
+      </div>
     </FadeTransition>
   );
 };
