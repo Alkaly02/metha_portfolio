@@ -18,6 +18,10 @@ import phoneSvg from "../../assets/svgs/phone.svg";
 import emailSvg from "../../assets/svgs/mail.svg";
 import locationSvg from "../../assets/svgs/location.svg";
 
+const ProfilContainerPane = styled.div`
+  // position: fixed;
+  top: 150px
+`
 const ImageContainerPane = styled.div`
   width: 200px;
   height: 200px;
@@ -59,7 +63,7 @@ const socialMedia = [
 
 const Profil = () => {
   return (
-    <>
+    <ProfilContainerPane>
       <Flex justify="center" direction="column" align="center">
         <ImageContainerPane>
           <img src={methaProfil} alt="Je suis Mouhamet Badiane" />
@@ -111,7 +115,7 @@ const Profil = () => {
           </Button>
         </Flex>
       </ProfilInfo>
-    </>
+    </ProfilContainerPane>
   );
 };
 

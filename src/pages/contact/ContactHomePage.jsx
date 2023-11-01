@@ -16,13 +16,13 @@ const contacts = {
     {
       title: "Téléphone ",
       icon: phoneSvg,
-      infos: ["+221 77 777 77 77", "+221 76 777 77 77"],
+      infos: ["+221 77 114 29 84", "+221 76 645 29 35"],
       bgColor: rootstyles.color.tercary,
     },
     {
       title: "Email:",
       icon: mailContact,
-      infos: ["maymounawade@gmail.com"],
+      infos: ["mouhametbadiane78@gmail.com"],
       bgColor: rootstyles.color.primaryhsl,
     },
   ],

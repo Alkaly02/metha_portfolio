@@ -23,6 +23,8 @@ const MainContentChild = styled.div`
 `;
 const LeftPane = styled.div`
   background-color: #fff;
+  position: sticky !important;
+  top: 50px;
   flex: 1;
   height: 100%;
   padding: 10px ${rootstyles.padding.leftPane}px;
@@ -34,6 +36,7 @@ const RightPane = styled.div`
   height: 100%;
   padding: 10px ${rootstyles.padding.rightPane - 10}px;
   border-radius: ${rootstyles.radius.border};
+  min-height: 80vh;
 `;
 
 const MainApp = () => {
