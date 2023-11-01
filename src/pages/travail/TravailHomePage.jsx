@@ -1,165 +1,198 @@
 import React from "react";
+import { Grid } from "@mantine/core";
+import styled from "styled-components";
+
 import Title from "../../components/shared/Title";
 import { rootstyles } from "../../styles/rootstyles";
-import { Grid } from "@mantine/core";
 import PorfolioCard from "../../components/portfolio/PorfolioCard";
 import FadeTransition from "../../components/fadeTransition/FadeTransition";
-import styled from "styled-components";
+
+import nsPresentation1 from "../../assets/images/creas/ns-presentation-1.png"
+import nsPresentation2 from "../../assets/images/creas/ns-presentation-2.png"
+import nsPresentation3 from "../../assets/images/creas/ns-presentation-3.png"
+import img1 from "../../assets/images/creas/ya-seyda-mbery-affiche-1.png"
+import img2 from "../../assets/images/creas/ya-fatou-restaurant-affiche-1.png"
+import img3 from "../../assets/images/creas/minane-travel-affiche-1.png"
+import img4 from "../../assets/images/creas/she-codes-affiche-1.png"
+import img5 from "../../assets/images/creas/so-elle-affiche-1.png"
+import img6 from "../../assets/images/creas/honorablecon-affiche-1.png"
+import img7 from "../../assets/images/creas/she-codes-affiche-2.png"
+import img8 from "../../assets/images/creas/trophee.png"
+import img9 from "../../assets/images/creas/red-team-affiche-1.png"
+import img10 from "../../assets/images/creas/fat-fat-mockup-1.png"
+import img11 from "../../assets/images/creas/fat-fat-mockup-2.png"
+import img12 from "../../assets/images/creas/bonheure-conjugal-affiche-1.png"
+import img13 from "../../assets/images/creas/fat-fat-logo-1.png"
+import img14 from "../../assets/images/creas/ataya-express-affiche-1.png"
+import img15 from "../../assets/images/creas/ataya-express-affiche-2.png"
+import img16 from "../../assets/images/creas/ataya-express-affiche-3.png"
+import img17 from "../../assets/images/creas/ataya-express-affiche-4.png"
+import img18 from "../../assets/images/creas/she-codes-affiche-3.png"
+import img19 from "../../assets/images/creas/ket-ket-logo.png"
+import img20 from "../../assets/images/creas/faju-affiche-1.png"
+import img21 from "../../assets/images/creas/bonheure-conjugal-affiche-2.png"
+import img22 from "../../assets/images/creas/le-coran-soigne-affiche-1.png"
+import img23 from "../../assets/images/creas/ket-ket-affiche-1.png"
+import img24 from "../../assets/images/creas/le-coran-soigne-affiche-2.png"
+import img25 from "../../assets/images/creas/bonheure-conjugal-affiche-3.png"
+import img26 from "../../assets/images/creas/bonheure-conjugal-affiche-4.png"
+import img27 from "../../assets/images/creas/bonheure-conjugal-affiche-5.png"
+import img28 from "../../assets/images/creas/bonheure-conjugal-logo.png"
 
 const portfolio = {
   all: [
     {
-      img: "../../assets/images/creas/ns-presentation-1.png",
+      img: nsPresentation1,
       title: "Affiche",
       description: "NS Prestation",
     },
     {
-      img: "../../assets/images/creas/ns-presentation-2.png",
+      img: nsPresentation2,
       title: "Affiche",
       description: "NS Prestation",
     },
     {
-      img: "../../assets/images/creas/ns-presentation-3.png",
+      img: nsPresentation3,
       title: "Affiche",
       description: "NS Prestation / Kovalys Connect",
     },
     {
-      img: "../../assets/images/creas/ya-seyda-mbery-affiche-1.png",
+      img: img1,
       title: "Affiche",
       description: "Ya Seyda Mbery",
     },
     {
-      img: "../../assets/images/creas/ya-fatou-restaurant-affiche-1.png",
+      img: img2,
       title: "Affiche",
       description: "Ya Fatou Restaurant",
     },
     {
-      img: "../../assets/images/creas/minane-travel-affiche-1.png",
+      img: img3,
       title: "Affiche",
       description: "Minane travel",
     },
     {
-      img: "../../assets/images/creas/she-codes-affiche-1.png",
+      img: img4,
       title: "Affiche",
       description: "She Code's",
     },
     {
-      img: "../../assets/images/creas/so-elle-affiche-1.png",
+      img: img5,
       title: "Affiche",
       description: "So'Elle",
     },
     {
-      img: "../../assets/images/creas/honorablecon-affiche-1.png",
+      img: img6,
       title: "Affiche",
       description: "HonorableCon",
     },
     {
-      img: "../../assets/images/creas/she-codes-affiche-2.png",
+      img: img7,
       title: "Affiche",
       description: "She Code's",
     },
     {
-      img: "../../assets/images/creas/trophee.png",
+      img: img8,
       title: "Modelisation",
       description: "Trophée Bakeliste du mois",
     },
     {
-      img: "../../assets/images/creas/red-team-affiche-1.png",
+      img: img9,
       title: "Affiche",
       description: "RED Team",
     },
     {
-      img: "../../assets/images/creas/fat-fat-mockup-1.png",
+      img: img10,
       title: "Mock-up",
       description: "Fot Fat Fat",
     },
     {
-      img: "../../assets/images/creas/fat-fat-mockup-2.png",
+      img: img11,
       title: "Mock-up",
       description: "Fot Fat Fat",
     },
     {
-      img: "../../assets/images/creas/bonheure-conjugal-affiche-1.png",
+      img: img12,
       title: "Affiche",
       description: "Bonheure Conjugal",
     },
     {
-      img: "../../assets/images/creas/fat-fat-logo-1.png",
+      img: img13,
       title: "Logo",
       description: "Fot Fat Fat",
     },
     {
-      img: "../../assets/images/creas/ataya-express-affiche-1.png",
+      img: img14,
       title: "Affiche",
       description: "Ataya express",
     },
     {
-      img: "../../assets/images/creas/ataya-express-affiche-2.png",
+      img: img15,
       title: "Affiche",
       description: "Ataya express",
     },
     {
-      img: "../../assets/images/creas/ataya-express-affiche-3.png",
+      img: img16,
       title: "Affiche",
       description: "Ataya express",
     },
     {
-      img: "../../assets/images/creas/ataya-express-affiche-4.png",
+      img: img17,
       title: "Affiche",
       description: "Ataya express",
     },
     {
-      img: "../../assets/images/creas/she-codes-affiche-3.png",
+      img: img18,
       title: "Affiche",
       description: "She Code's",
     },
     {
-      img: "../../assets/images/creas/ket-ket-logo.png",
+      img: img19,
       title: "Logo",
       description: "Ket Ket",
     },
     {
-      img: "../../assets/images/creas/faju-affiche-1.png",
+      img: img20,
       title: "Affiche",
       description: "Faju",
     },
     {
-      img: "../../assets/images/creas/bonheure-conjugal-affiche-2.png",
+      img: img21,
       title: "Affiche",
       description: "Bonheure Conjugal",
     },
     {
-      img: "../../assets/images/creas/le-coran-soigne-affiche-1.png",
+      img: img22,
       title: "Affiche",
       description: "Le coran Soigne",
     },
     {
-      img: "../../assets/images/creas/ket-ket-affiche-1.png",
+      img: img23,
       title: "Affiche",
       description: "Ket Ket",
     },
     {
-      img: "../../assets/images/creas/le-coran-soigne-affiche-2.png",
+      img: img24,
       title: "Affiche",
       description: "Le coran Soigne",
     },
     {
-      img: "../../assets/images/creas/bonheure-conjugal-affiche-3.png",
+      img: img25,
       title: "Affiche",
       description: "Bonheure Conjugal",
     },
     {
-      img: "../../assets/images/creas/bonheure-conjugal-affiche-4.png",
+      img: img26,
       title: "Affiche",
       description: "Bonheure Conjugal",
     },
     {
-      img: "../../assets/images/creas/bonheure-conjugal-affiche-5.png",
+      img: img27,
       title: "Affiche",
       description: "Bonheure Conjugal",
     },
     {
-      img: "../../assets/images/creas/bonheure-conjugal-logo.png",
+      img: img28,
       title: "Logo",
       description: "Bonheure Conjugal",
     },
@@ -325,7 +358,7 @@ const TravailHomePage = () => {
         {portfolio.all.map((work) => (
           <Grid.Col span={6}>
             <FadeTransition fadeTransition="animate__fadeInUp">
-            <PorfolioCard title={work.title} description={work.description} />
+              <PorfolioCard img={work.img} title={work.title} description={work.description} />
             </FadeTransition>
           </Grid.Col>
         ))}

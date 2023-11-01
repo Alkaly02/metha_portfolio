@@ -9,7 +9,7 @@ import ProfilInfoCardItem from "./ProfilInfoCardItem";
 
 import facebookSvg from "../../assets/svgs/facebook.svg";
 import linkedInSvg from "../../assets/svgs/linkedin.svg";
-import twitterSvg from "../../assets/svgs/twitter.svg";
+// import twitterSvg from "../../assets/svgs/twitter.svg";
 import instaSvg from "../../assets/svgs/instagram.svg";
 
 import youtube from "../../assets/images/youtube.png"
