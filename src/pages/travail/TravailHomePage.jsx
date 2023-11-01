@@ -38,6 +38,31 @@ import img25 from "../../assets/images/creas/bonheure-conjugal-affiche-3.png"
 import img26 from "../../assets/images/creas/bonheure-conjugal-affiche-4.png"
 import img27 from "../../assets/images/creas/bonheure-conjugal-affiche-5.png"
 import img28 from "../../assets/images/creas/bonheure-conjugal-logo.png"
+import img29 from "../../assets/images/creas/bonheure-conjugal-affiche-6.png"
+import img30 from "../../assets/images/creas/lka-dev.png"
+import img31 from "../../assets/images/creas/mbaymi-connect-logo.png"
+import img32 from "../../assets/images/creas/btp-logo.png"
+import img33 from "../../assets/images/creas/teranga-chicken.png"
+import img34 from "../../assets/images/creas/teranga-chicken-affiche-1.png"
+import img35 from "../../assets/images/creas/univ-logo.png"
+import img36 from "../../assets/images/creas/tayeur-logo.png"
+import img37 from "../../assets/images/creas/elikia-affiche-1.png"
+import img38 from "../../assets/images/creas/elikia-affiche-2.png"
+import img39 from "../../assets/images/creas/elikia-affiche-3.png"
+import img40 from "../../assets/images/creas/fewnu-illustration.png"
+import img41 from "../../assets/images/creas/fewnu-affiche-1.png"
+import img42 from "../../assets/images/creas/fewnu-affiche-2.png"
+import img43 from "../../assets/images/creas/fewnu-affiche-3.png"
+import img44 from "../../assets/images/creas/fewnu-affiche-4.png"
+import img45 from "../../assets/images/creas/fewnu-affiche-5.png"
+import img46 from "../../assets/images/creas/komyu-affiche-1.png"
+import img47 from "../../assets/images/creas/komyu-mentorat.png"
+import img48 from "../../assets/images/creas/komyu-affiche-2.png"
+import img49 from "../../assets/images/creas/komyu-affiche-3.png"
+import img50 from "../../assets/images/creas/komyu-affiche-4.png"
+import img51 from "../../assets/images/creas/khaire-travel-affiche-1.png"
+import img52 from "../../assets/images/creas/khaire-travel-logo.png"
+import img53 from "../../assets/images/creas/red-team-affichee-1.png"
 
 const portfolio = {
   all: [
@@ -197,127 +222,127 @@ const portfolio = {
       description: "Bonheure Conjugal",
     },
     {
-      img: "../../assets/images/creas/bonheure-conjugal-affiche-6.png",
+      img: img29,
       title: "Logo",
       description: "Bonheure Conjugal",
     },
     {
-      img: "../../assets/images/creas/lka-dev.png",
+      img: img30,
       title: "Logo",
       description: "Lka Dev",
     },
     {
-      img: "../../assets/images/creas/mbaymi-connect-logo.png",
+      img: img31,
       title: "Logo",
       description: "Mbay'mi Connect",
     },
     {
-      img: "../../assets/images/creas/btp-logo.png",
+      img: img32,
       title: "Logo",
       description: "Technocons BTP",
     },
     {
-      img: "../../assets/images/creas/teranga-chicken.png",
+      img: img33,
       title: "Logo",
       description: "Teranga Chicken",
     },
     {
-      img: "../../assets/images/creas/teranga-chicken-affiche-1.png",
+      img: img34,
       title: "Affiche",
       description: "Teranga Chicken",
     },
     {
-      img: "../../assets/images/creas/univ-logo.png",
+      img: img35,
       title: "Logo",
       description: "Univ",
     },
     {
-      img: "../../assets/images/creas/tayeur-logo.png",
+      img: img36,
       title: "Logo",
       description: "Tayeur Gestion",
     },
     {
-      img: "../../assets/images/creas/elikia-affiche-1.png",
+      img: img37,
       title: "Affiche",
       description: "Elikia Ventur",
     },
     {
-      img: "../../assets/images/creas/elikia-affiche-2.png",
+      img: img38,
       title: "Affiche",
       description: "Elikia Ventur",
     },
     {
-      img: "../../assets/images/creas/elikia-affiche-3.png",
+      img: img39,
       title: "Affiche",
       description: "Elikia Ventur",
     },
     {
-      img: "../../assets/images/creas/fewnu-illustration.png",
+      img: img40,
       title: "Illustration",
       description: "Fewnu",
     },
     {
-      img: "../../assets/images/creas/fewnu-affiche-1.png",
+      img: img41,
       title: "Affiche",
       description: "Fewnu",
     },
     {
-      img: "../../assets/images/creas/fewnu-affiche-2.png",
+      img: img42,
       title: "Affiche",
       description: "Fewnu",
     },
     {
-      img: "../../assets/images/creas/fewnu-affiche-3.png",
+      img: img43,
       title: "Affiche",
       description: "Fewnu",
     },
     {
-      img: "../../assets/images/creas/fewnu-affiche-4.png",
+      img: img44,
       title: "Affiche",
       description: "Fewnu",
     },
     {
-      img: "../../assets/images/creas/fewnu-affiche-5.png",
+      img: img45,
       title: "Affiche",
       description: "Fewnu",
     },
     {
-      img: "../../assets/images/creas/komyu-affiche-1.png",
+      img: img46,
       title: "Affiche",
       description: "NS Prestation / Komyu Plus",
     },
     {
-      img: "../../assets/images/creas/komyu-mentorat.png",
+      img: img47,
       title: "Mantorat",
       description: "Komyu Plus",
     },
     {
-      img: "../../assets/images/creas/komyu-affiche-2.png",
+      img: img48,
       title: "Affiche",
       description: "Komyu Plus",
     },
     {
-      img: "../../assets/images/creas/komyu-affiche-3.png",
+      img: img49,
       title: "Affiche",
       description: "Komyu Plus",
     },
     {
-      img: "../../assets/images/creas/komyu-affiche-4.png",
+      img: img50,
       title: "Affiche",
       description: "Komyu Plus",
     },
     {
-      img: "../../assets/images/creas/khaire-travel-affiche-1.png",
+      img: img51,
       title: "Affiche",
       description: "Khaira Travel",
     },
     {
-      img: "../../assets/images/creas/khaire-travel-logo.png",
+      img: img52,
       title: "Logo",
       description: "Khaira Travel",
     },
     {
-      img: "../../assets/images/creas/red-team-affichee-1.png",
+      img: img53,
       title: "Affiche",
       description: "Bakeli / RED Team",
     },
